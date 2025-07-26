@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
     try {
         const body = await request.json() as CreateTaskDTO;
         const newTask = await createTask(body);
-        return NextResponse.json({ task: newTask }, { status: 201 });
+        return NextResponse.json({ newTask }, { status: 201 });
     } catch (error) {
         console.error('POST /api/tasks error:', error);
 

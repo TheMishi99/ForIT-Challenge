@@ -43,7 +43,7 @@ export async function DELETE(request: NextRequest, { params }: { params: Promise
     try {
         const id = (await params).id;
         const deletedTask = await deleteTask(id);
-        return NextResponse.json({ task: deletedTask });
+        return NextResponse.json({ deletedTask });
     } catch (error) {
         console.error('DELETE /api/tasks/[id] error:', error);
 
