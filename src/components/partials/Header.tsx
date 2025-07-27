@@ -18,7 +18,7 @@ export default function Header() {
                     <Link href="/" className={`p-2 rounded-xl hover:bg-gray-900 hover:text-white ${pathname === "/" ? "bg-gray-800" : "bg-white text-black"}`}>Inicio</Link>
                 </li>
                 <li className="flex justify-center items-center">
-                    <Link href="/tasks" className={`p-2 rounded-xl hover:bg-gray-900 hover:text-white ${pathname === "/tasks" ? "bg-gray-800" : "bg-white text-black"}`}>Tasks</Link>
+                    <Link href="/tasks" className={`p-2 rounded-xl hover:bg-gray-900 hover:text-white ${pathname === "/tasks" ? "bg-gray-800" : "bg-white text-black"}`}>Tareas</Link>
                 </li>
             </ul>
         </header>

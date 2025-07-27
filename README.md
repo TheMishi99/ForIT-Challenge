@@ -156,28 +156,31 @@ El proyecto implementa un sistema robusto de manejo de errores:
 
 ## Screenshots
 
-### Home Page (/)
+### Inicio (/)
 <img src="./public/screenshots/homepage.png" alt="Homepage" />
 
-### Tasks Page (/tasks)
+### Tareas (/tasks)
 <img src="./public/screenshots/taskspage.png" alt="Taskspage" />
 
-### Create Task Form Modal
+### Modal de Formulario para Crear una Tarea
 <img src="./public/screenshots/create-task-modal.png" alt="Create Task Form Modal" />
 
-### Task Created
+### Tarea Creada
 <img src="./public/screenshots/task-created.png" alt="Task Created"/>
 
-### Edit Task Form Modal
+### Detalle de Tarea
+<img src="./public/screenshots/task-detail.png" alt="Task Detail"/>
+
+### Modal de Formulario para Editar una Tarea
 <img src="./public/screenshots/edit-task-modal.png" alt="Edit Task Form Modal"/>
 
-### Task Updated
+### Tarea Actualizada
 <img src="./public/screenshots/task-updated.png" alt="Task Updated"/>
 
-### Delete Task Form Modal
+### Modal de Formulario para Eliminar una Tarea
 <img src="./public/screenshots/delete-task-modal.png" alt="Delete Task Form Modal"/>
 
-### Task Deleted
+### Tarea Eliminada
 <img src="./public/screenshots/task-deleted.png" alt="Task Deleted"/>
 
 ## 📝 Licencia
