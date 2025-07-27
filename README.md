@@ -154,6 +154,32 @@ El proyecto implementa un sistema robusto de manejo de errores:
 - **Componentes reutilizables**: Arquitectura modular
 - **Responsive design**: Adaptable a móviles y desktop
 
+## Screenshots
+
+### Home Page (/)
+<img src="./public/screenshots/homepage.png" alt="Homepage" />
+
+### Tasks Page (/tasks)
+<img src="./public/screenshots/taskspage.png" alt="Taskspage" />
+
+### Create Task Form Modal
+<img src="./public/screenshots/create-task-modal.png" alt="Create Task Form Modal" />
+
+### Task Created
+<img src="./public/screenshots/task-created.png" alt="Task Created"/>
+
+### Edit Task Form Modal
+<img src="./public/screenshots/edit-task-modal.png" alt="Edit Task Form Modal"/>
+
+### Task Updated
+<img src="./public/screenshots/task-updated.png" alt="Task Updated"/>
+
+### Delete Task Form Modal
+<img src="./public/screenshots/delete-task-modal.png" alt="Delete Task Form Modal"/>
+
+### Task Deleted
+<img src="./public/screenshots/task-deleted.png" alt="Task Deleted"/>
+
 ## 📝 Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
