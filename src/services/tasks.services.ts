@@ -70,7 +70,7 @@ export async function createTask(data: CreateTaskDTO): Promise<Task> {
             id: crypto.randomUUID(),
             title: data.title.trim(),
             description: data.description.trim(),
-            completed: false,
+            completed: data.completed,
             createdAt: new Date()
         }
         

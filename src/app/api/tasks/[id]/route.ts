@@ -7,7 +7,7 @@ export async function PUT(request: NextRequest, { params }: { params: Promise<{ 
         const id = (await params).id;
         const body = await request.json() as UpdateTaskDTO;
         const updatedTask = await updateTask(id, body);
-        return NextResponse.json({ task: updatedTask });
+        return NextResponse.json({ updatedTask });
     } catch (error) {
         console.error('PUT /api/tasks/[id] error:', error);
 

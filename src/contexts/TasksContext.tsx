@@ -1,3 +1,4 @@
+"use client"
 import { CreateTaskDTO, Task, UpdateTaskDTO } from "@/types/task.types";
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
@@ -46,13 +47,11 @@ export default function TasksContextProvider({ children }: Readonly<{ children: 
             return false;
         } else {
             const data = await response.json() as { newTask: Task }
-            setTasks((tasks) => {
-                tasks.push(data.newTask)
-                return tasks;
-            })
+            setTasks((tasks) => [...tasks, data.newTask])
             return true
         }
     }
+
     async function editTask(id: string, updateTaskData: UpdateTaskDTO) {
         const response = await fetch(`/api/tasks/${id}`, { method: "PUT", body: JSON.stringify(updateTaskData), headers: { "Content-Type": "application/json" } })
         if (!response.ok) {
@@ -61,6 +60,7 @@ export default function TasksContextProvider({ children }: Readonly<{ children: 
             return false;
         } else {
             const data = await response.json() as { updatedTask: Task }
+            console.log(data)
             setTasks(tasks =>
                 tasks.map(task => task.id === id ? data.updatedTask : task)
             )

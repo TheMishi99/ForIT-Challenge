@@ -5,5 +5,5 @@ export type Task = {
     completed: boolean;
     createdAt: Date;
 }
-export type CreateTaskDTO = Omit<Task, "id" | "createdAt" | "completed">
-export type UpdateTaskDTO = Partial<Omit<Task, "id" | "createdAt">>
+export type CreateTaskDTO = Omit<Task, "id" | "createdAt">
+export type UpdateTaskDTO = Partial<CreateTaskDTO>
